@@ -1,18 +1,17 @@
-{
-    "autoIncrement": false,
-    "read": {
-      "access": "anonymous"
-    },
-    "insert": {
-      "access": "anonymous"
-    },
-    "update": {
-      "access": "anonymous"
-    },
-    "delete": {
-      "access": "anonymous"
-    },
-    "undelete": {
-      "access": "anonymous"
-    }
-  }
+var table = module.exports = require('azure-mobile-apps').table();
+
+table.read(function (context) {
+    return context.execute();
+});
+
+table.insert(function (context) {
+    return context.execute();
+});
+
+table.update(function (context) {
+    return context.execute();
+});
+
+table.delete(function (context) {
+    return context.execute();
+});
